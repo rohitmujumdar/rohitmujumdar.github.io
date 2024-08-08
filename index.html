@@ -20,6 +20,7 @@
       grid-template-columns: 1fr 3fr;
       gap: 20px;
       padding: 20px;
+      font-family: Arial, sans-serif;
     }
     .profile-pic {
       max-width: 100%;
@@ -35,9 +36,12 @@
       background: #f9f9f9;
       padding: 20px;
       border-radius: 10px;
+      margin-bottom: 20px;
     }
-    h3, h2 {
+    h3, h2, heading {
       margin-top: 0;
+      display: flex;
+      align-items: center;
     }
     heading {
       font-size: 1.5em;
@@ -59,8 +63,23 @@
     .contact-links a {
       margin: 0 5px;
     }
-    .personal-interests, .contact, .publications, .patents, .projects, .leadership, .media {
+    .publications, .patents, .projects, .leadership, .media {
       grid-column: span 2;
+    }
+    .what-i-bring-to-the-table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: #f0f0f0;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .what-i-bring-to-the-table > section {
+      flex: 1 1 45%;
+      margin: 10px;
+    }
+    .what-i-bring-to-the-table h2 {
+      font-size: 1.2em;
     }
   </style>
 </head>
@@ -77,33 +96,37 @@
     </div>
 
     <section class="what-i-bring-to-the-table">
-      <h4>🔍 What I Bring to the Table</h3>
+      <h3>🔍 What I Bring to the Table</h3>
       <section class="professional-experience">
-        <p><b>🌟 Diverse Professional Experience :</b> I've thrived in environments from a 4-employee startup in India to Intel, and from academic research at Georgia Tech to IBM Research. This diversity has honed my adaptability and ability to deliver results in varied settings.</p>
+        <h2>🌟 Diverse Professional Experience</h2>
+        <p>I've thrived in environments from a 4-employee startup in India to Intel, and from academic research at Georgia Tech to IBM Research. This diversity has honed my adaptability and ability to deliver results in varied settings.</p>
       </section>
       <section class="comfort-with-ambiguity">
-        <p><b>🔄 Comfort with Ambiguity </b>In my current role, I've navigated research uncertainties, funding challenges, layoffs, and evolving business needs. This experience has strengthened my ability to adapt and innovate in ambiguous situations.</p>
+        <h2>🔄 Comfort with Ambiguity</h2>
+        <p>In my current role, I've navigated research uncertainties, funding challenges, layoffs, and evolving business needs. This experience has strengthened my ability to adapt and innovate in ambiguous situations.</p>
       </section>
       <section class="collaborative-spirit">
-        <p><b>🤝 Collaborative Spirit</b>I thrive on collaboration, believing that diverse teams create the best results. For instance, I collaborated with a sociology professor from the University of Budapest on prompts to analyze LLMs' queer value systems. Effective communication skills, empathy, and discipline are key to great collaborations!</p>
+        <h2>🤝 Collaborative Spirit</h2>
+        <p>I thrive on collaboration, believing that diverse teams create the best results. For instance, I collaborated with a sociology professor from the University of Budapest on prompts to analyze LLMs' queer value systems. Effective communication skills, empathy, and discipline are key to great collaborations!</p>
       </section>
       <section class="ownership-and-proactivity">
-        <p><b>🚀 Ownership and Proactivity</b>I take full ownership of projects and proactively seek, or even create opportunities. At Intel, I identified use cases for my skills outside my team and learned new technologies to deliver a RAG solution for internal document interaction.</p>
+        <h2>🚀 Ownership and Proactivity</h2>
+        <p>I take full ownership of projects and proactively seek, or even create opportunities. At Intel, I identified use cases for my skills outside my team and learned new technologies to deliver a RAG solution for internal document interaction.</p>
       </section>
       <section class="human-centric-approach">
-        <p><b>🌍 Human-Centric Approach to Technology</b>As a queer, first-generation immigrant, I (sometimes, first-hand) understand technology's societal impact. This perspective, deepened through podcast interviews and my role as Head TA for Georgia Tech's AI ethics course, informs my work to benefit underrepresented communities.</p>
+        <h2>🌍 Human-Centric Approach to Technology</h2>
+        <p>As a queer, first-generation immigrant, I understand technology's societal impact. This perspective, deepened through podcast interviews and my role as Head TA for Georgia Tech's AI ethics course, informs my work to benefit underrepresented communities.</p>
       </section>
       <section class="open-source-values">
-        <p><b>🔓 Open Source and AI for Social Good</b>I support democratizing good ML and open source. I developed HawkEye, a reputation system for Twitter's Birdwatch (now Community Notes), to combat misinformation. Our project was possible because Twitter open-sourced Birdwatch's data and code. Recognizing the power of open source, we also open-sourced HawkEye, influencing improvements to Twitter's Community Notes algorithm.</p>
+        <h2>🔓 Open Source and AI for Social Good</h2>
+        <p>I support democratizing good ML and open source. I developed HawkEye, a reputation system for Twitter's Birdwatch (now Community Notes), to combat misinformation. Our project was possible because Twitter open-sourced Birdwatch's data and code. Recognizing the power of open source, we also open-sourced HawkEye, influencing improvements to Twitter's Community Notes algorithm.</p>
       </section>
     </section>
 
     <section class="personal-interests">
       <h3>💃🏻 Personal Interests</h3>
       <p align="justify">Outside of work, I love to dance! Check out my <a href="https://www.instagram.com/rohitmujumdar_/">dance videos</a>. I am an avid practitioner of Yoga and an ardent promoter of mental health awareness.</p>
-	<p align="justify">🎥 I run a <a href="https://www.youtube.com/channel/UC85aF1GbDkl9-tzwanPMhXA/videos">video podcast, 'Talking To The Moon'</a>, where I interview people across professions and walks of life and listen to the stories they have to tell. More about the idea behind the vodcast in <a href="https://www.linkedin.com/posts/rohitmujumdar_vodcast-connections-storytelling-activity-6915833574826885120-EARo?">this article</a>.</p>
     </section>
-	
 
     <section class="contact">
       <h3>📧 Contact</h3>
@@ -118,7 +141,7 @@
     </section>
 
     <section class="publications">
-      <heading>Publications</heading>
+      <heading>📚 Publications</heading>
       <hr>
       <div>
         <img src="images/A-partial-sample-of-the-ontology-model.png" alt="3DSP" width="250" height="130">
@@ -133,6 +156,7 @@
           <a href="https://link.springer.com/chapter/10.1007/978-981-19-2600-6_1">paper</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/disparity.png" alt="3DSP" width="250" height="130">
         <div>
@@ -147,6 +171,7 @@
           <a href="papers/multimodality.pdf">paper</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="papers/bw.png" alt="3DSP" width="250" height="130">
         <div>
@@ -162,6 +187,7 @@
           <a href="https://youtu.be/axdDIm7Ccno">video</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="papers/inf_poster.png" alt="3DSP" width="250" height="130">
         <div>
@@ -179,7 +205,7 @@
     </section>
 
     <section class="patents">
-      <heading>Patents</heading>
+      <heading>🔬 Patents</heading>
       <hr>
       <div>
         <img src="images/patent1.png" alt="3DSP" width="250" height="130">
@@ -190,6 +216,7 @@
           <strong>Keywords: </strong>operations research, ticket resolution, employee skill management, sentiment analysis, performance review
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/patent2.png" alt="3DSP" width="250" height="130">
         <div>
@@ -202,7 +229,7 @@
     </section>
 
     <section class="projects">
-      <heading>Selected Projects</heading>
+      <heading>🛠️ Selected Projects</heading>
       <hr>
       <div>
         <img src="images/fairness.png" alt="3DSP" width="320" height="200">
@@ -222,6 +249,7 @@
           <a href="https://github.com/rohitmujumdar/fairness-in-graph-embeddings/tree/main">code</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/mag.png" alt="3DSP" width="300" height="260">
         <div>
@@ -242,6 +270,7 @@
           <a href="https://drive.google.com/file/d/1pISid56F4vYOXGwbtzfL-poD5LGfYrUc/view">software</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/aita.jpg" alt="3DSP" width="300" height="260">
         <div>
@@ -260,6 +289,7 @@
           <a href="https://github.com/prathik-k/moral-classifier">code</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/peerread.png" alt="3DSP" width="300" height="260">
         <div>
@@ -279,6 +309,7 @@
           <a href="https://bluejeans.com/playback/s/t@Po4">video</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/cnn.png" alt="3DSP" width="320" height="200">
         <div>
@@ -299,6 +330,7 @@
           <a href="https://www.youtube.com/watch?v=84jUJke_ytk">video</a>
         </div>
       </div>
+      <hr>
       <div>
         <img src="images/ontology1.png" alt="3DSP" width="250" height="200">
         <div>
@@ -321,7 +353,7 @@
     </section>
 
     <section class="leadership">
-      <heading>Leadership and Volunteer Work</heading>
+      <heading>🗂️ Leadership and Volunteer Work</heading>
       <hr>
       <ul>
         <li><strong>Reviewer → </strong> CVPR 2024, NAACL 2024, SWPC 2024 (Intel), July 2022 - March 2023</li>
@@ -336,11 +368,11 @@
     </section>
 
     <section class="media">
-      <heading>In The Media</heading>
+      <heading>📺 In The Media</heading>
       <hr>
       <ul>
         <li><strong> March 2024 → </strong>Appeared on the <a href="https://youtu.be/NLTFgdZPQ4A?si=45R35HNkrgrR8-b6">IEEE Pune podcast 'Beyond conversations'</a></li>
-        <li><strong>Nov 2022 to present →</strong> My work on Birdwatch has been covered in various prominent platforms, including:</li>
+        <li><strong> Since Nov 2022  →</strong> My work on Birdwatch has been covered in various prominent platforms, including:</li>
         <ul>
           <li><a href="https://www.pressreader.com/india/the-asian-age/20221104/282278144283177">Change in Twitter's Demographics (The Asian Age)</a></li>
           <li><a href="https://www.nature.com/articles/s43588-022-00238-9">Fighting hate speech and misinformation online, Nature Magazine</a></li>
