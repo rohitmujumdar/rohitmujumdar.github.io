@@ -1,6 +1,6 @@
 ---
 name: plainspoken
-description: Write all prose in the user's plainspoken style. Use this skill every time the user asks for writing of any kind, including drafting, rewriting, editing, shortening, or polishing text such as blog posts, site copy, emails, bios, cover letters, READMEs, documentation, commit messages, PR descriptions, LinkedIn posts, or answers meant to be pasted somewhere. Also use it when the user says "in my style", "plainspoken", "make it sound human", "make it less AI", or complains that a draft sounds stiff or performed. If the deliverable contains sentences a human will read, this skill applies.
+description: One of the user's writing-style skills. Apply it only when the user asks for it by name, via /plainspoken or by saying "plainspoken" or "use my plainspoken style" in the request. Do not apply it to writing tasks on your own initiative; the user keeps several styles and chooses per piece. When invoked, write or rewrite the requested prose under the style spec in this file.
 ---
 
 # Plainspoken
